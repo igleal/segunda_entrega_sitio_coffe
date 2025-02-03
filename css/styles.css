@@ -1,0 +1,615 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* Global Reset and Styles */
+
+:root {
+  --main-font: "Inter", serif;
+  --color-one: rgb(255, 185, 104);
+  --color-two: rgba(255, 210, 157, 0.5);
+  --color-three: rgb(54, 35, 27);
+  --color-four: rgba(54, 35, 27, 0.9);
+  --color-five: rgba(54, 35, 27, 0.6);
+  --color-six: rgba(240, 214, 183, 0.6);
+  --color-seven: rgb(240, 235, 230);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    #d56c4b,
+    #d9734d,
+    #dd7b50,
+    #e18253,
+    #e58956,
+    #e98f58,
+    #ec965b,
+    #f09c5d,
+    #f4a35f,
+    #f8aa62,
+    #fbb265,
+    #ffb968
+  );
+}
+
+main {
+  flex: 1;
+}
+
+/* Menu of Site Web - Styles */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-three);
+  padding: 1.5rem;
+}
+
+.mainNavbar ul {
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .mainNavbar ul {
+    display: flex;
+    gap: 2.25rem;
+  }
+
+  .mainNavbar ul li a {
+    color: var(--color-one);
+    font-size: 1rem;
+  }
+
+  .mainNavbar a:hover {
+    color: rgb(172, 192, 187);
+    transform: scale(1.2);
+    transition-duration: 500ms;
+  }
+
+  .mainNavbar img {
+    display: none;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  background: var(--color-three);
+  margin-top: 1rem;
+}
+
+.footerTitle {
+  color: var(--color-one);
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.contentAbout a {
+  color: var(--color-two);
+  font-size: 0.9rem;
+}
+
+.contentAddress p {
+  color: var(--color-two);
+  font-size: 0.9rem;
+}
+
+.centerFooter {
+  text-align: center;
+}
+
+.centerFooter img {
+  width: 24px;
+}
+
+@media screen and (min-width: 640px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: self-start;
+    height: 140px;
+  }
+
+  /*   .contentSocial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
+}
+
+/* Page Home - styles from here */
+
+/* Section Banner */
+
+.mainBannerHome {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.imgBanner {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.contentBannerTitle {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Section Coffe Send to Menu */
+
+@media screen and (min-width: 641px) {
+}
+
+.mainSendMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem 0rem;
+}
+
+.contentMenuTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.mainSendMenu img {
+  width: 300px;
+  height: auto;
+}
+
+.ButtomMenuSend {
+  background-color: var(--color-one);
+  color: white;
+  padding: 0.25rem 0.6rem;
+  max-width: max-content;
+  font-size: 0.8125rem;
+}
+
+@media screen and (max-width: 640px) {
+  .mainSendMenu {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .contentMenuTitle {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .mainSendMenu img {
+    width: 100%;
+  }
+}
+
+/* Section Coffe Types */
+
+.mainCoffeType {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contentCoffeTitle {
+  max-width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contentCoffeTitle h2 {
+  color: var(--color-three);
+}
+
+.contentCoffeTitle p {
+  color: var(--color-four);
+}
+
+.contentTypesCoffe {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.articleTypeCoffe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--color-two);
+  padding: 0.625rem;
+  border-radius: 2rem;
+}
+
+.articleTypeCoffe img {
+  width: 140px;
+  margin: 0 0.625rem;
+}
+
+/* Page Menu - styles from here */
+
+/* Section List Menu */
+
+/* .coffeOption {
+  width: 100%;
+  height: auto;
+}
+
+.contentMenu {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, .1fr));
+  justify-items: center;
+  gap: 2rem;
+} */
+
+.mainCategory {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+.contentCategoryMenu {
+  display: none;
+}
+
+.buttonCategery {
+  display: flex;
+  background: var(--color-one);
+  padding: 8px;
+  border: none;
+  border-radius: 1rem;
+}
+
+.contentCategoryView {
+  display: flex;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 640px) {
+  .contentCategoryMenu {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .buttonCategery {
+    display: none;
+  }
+}
+
+.contentMenu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.optionMenuCoffe {
+  width: 120px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-two);
+  border-radius: 1.5rem;
+}
+
+.coffeOption {
+  width: 100%;
+  height: auto;
+}
+
+.inforCoffe {
+  background: var(--color-one);
+  border-radius: 0 0 1.5rem 1.5rem;
+  padding: 8px;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Page Contact - styles from here */
+
+/* Section Media Contact Info */
+
+.mainContact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 8rem auto;
+  grid-template-areas: "item1 item2 item3";
+  justify-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contentInfoMap {
+  grid-area: item1;
+  text-align: center;
+  align-content: center;
+  background: var(--color-five);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  max-width: 200px;
+}
+
+.contentInfoDirrection {
+  grid-area: item2;
+  text-align: center;
+  align-content: center;
+  background: var(--color-five);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  max-width: 200px;
+}
+
+.contentInfoPhone {
+  grid-area: item3;
+  text-align: center;
+  align-content: center;
+  background: var(--color-five);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 640px) {
+  .mainContact {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 8rem;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item3";
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .mainContact {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 8rem auto;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+  }
+}
+
+/* Section Contact */
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contentform {
+  width: 100%;
+}
+
+.formMensaje {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 480px;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  color: white;
+  background: var(--color-five);
+}
+
+.formMensaje {
+  font-size: 20px;
+}
+
+/* Page About - styles from here */
+
+/* Section Us */
+
+@media screen and (max-width: 640px) {
+  .mainAbourUs {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .contentAboutTitle {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .imgAboutUs {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 641px) {
+}
+
+.mainAbourUs {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contentAboutTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.imgAboutUs img {
+  width: 300px;
+  height: auto;
+}
+
+/* Section History */
+
+@media screen and (max-width: 640px) {
+  .mainAboutHistory {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 0rem;
+  }
+
+  .contentHistoryTitle {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .imgAboutHistory {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 641px) {
+}
+
+.mainAboutHistory {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contentHistoryTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.imgAboutHistory img {
+  width: 300px;
+  height: auto;
+}
+
+/* Page FAQs - styles from here */
+
+/* Section Questions */
+
+.titleQuestions {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contentFaqs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.fqasQuestions {
+  border: 2px solid #000;
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--color-two);
+  margin: 1rem 0;
+}
+
+.fqasQuestions h2 {
+  border-bottom: 2px solid #000;
+}
+
+/* Section Schedule */
+
+.inforQuestions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 8rem auto;
+  grid-template-areas: "item1 item2";
+  justify-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.horario {
+  grid-area: item1;
+  text-align: center;
+  align-content: center;
+}
+
+.reservas {
+  grid-area: item2;
+  text-align: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 640px) {
+  .inforQuestions {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 8rem auto;
+    grid-template-areas:
+      "item1"
+      "item2";
+  }
+}
