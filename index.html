@@ -7,49 +7,55 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html"
+    <header class="header">
+      <a class="header__logo" href="./index.html"
         ><img src="./assets/img_page/logo_coffe.svg" alt="logo_the_soul_coffe"
       /></a>
-      <nav class="mainNavbar">
-        <ul>
-          <li><a href="./index.html">Inicio</a></li>
-          <li><a href="./page/menu.html">Menu</a></li>
-          <li><a href="./page/sobre_nosotros.html">Sobre Nosotros</a></li>
-          <li><a href="./page/faqs.html">FAQs</a></li>
-          <li><a href="./page/contacto.html">Contactos</a></li>
-        </ul>
+      <div class="header__menu">
         <img src="./assets/icons/menuHamburger.svg" alt="menu_hamburger" />
+      </div>
+      <nav class="header__nav header__nav--true">
+        <ul class="header__ul">
+          <li class="header__li"><a href="./index.html">Inicio</a></li>
+          <li class="header__li"><a href="./page/menu.html">Menu</a></li>
+          <li class="header__li">
+            <a href="./page/sobre_nosotros.html">Sobre Nosotros</a>
+          </li>
+          <li class="header__li"><a href="./page/faqs.html">FAQs</a></li>
+          <li class="header__li">
+            <a href="./page/contacto.html">Contactos</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="mainBannerHome">
-        <div class="contentBannerTitle">
+    <main class="home">
+      <section class="home__banner">
+        <div class="banner__title">
           <h1>The Soul Coffe</h1>
           <p>Disfruta del aroma de un buen cafe.</p>
         </div>
         <img
-          class="imgBanner"
+          class="banner__img"
           src="./assets/img_page/banner_mobile.png"
           alt="banner_the_souo_coffe"
         />
       </section>
 
-      <section class="mainSendMenu">
-        <div class="contentMenuTitle">
+      <section class="viewMenu">
+        <div class="viewMenu__title">
           <h2>Un cafe para relajarte, un cafe para disfrutar.</h2>
           <p>
             Disfruta de un cafe que te hace sentir relajado y contento, perfecto
             para momentos de ocio y diversion.
           </p>
-          <a href="#" class="ButtomMenuSend">Leer Mas</a>
+          <a href="#" class="viewMenu__to">Leer Mas</a>
         </div>
         <img src="./assets/img_page/home_coffe_nitido 20.png" alt="" />
       </section>
 
-      <section class="mainCoffeType">
-        <div class="contentCoffeTitle">
+      <section class="coffeType">
+        <div class="coffeType__descrip">
           <h2>Un Sorbo de felicidad, un sorbo de cafe.</h2>
           <p>
             Descubre nuestra amplia variedad de cafés, cada uno diseñado para
@@ -59,23 +65,23 @@
           </p>
         </div>
 
-        <div class="contentTypesCoffe">
-          <article class="articleTypeCoffe">
-            <img src="./assets/img_coffe/mocha-iced.png" alt="Mocha Iced" />
+        <div class="coffeType__content">
+          <article class="typeCoffe__article">
+            <img class="typeCoffe__article--img" src="./assets/img_coffe/mocha-iced.png" alt="Mocha Iced" />
             <div>
               <h3>Mocha Iced</h3>
             </div>
           </article>
 
-          <article class="articleTypeCoffe">
-            <img src="./assets/img_coffe/mocha-iced.png" alt="Mocha Iced" />
+          <article class="typeCoffe__article">
+            <img class="typeCoffe__article--img" src="./assets/img_coffe/mocha-iced.png" alt="Mocha Iced" />
             <div>
               <h3>Mocha Iced</h3>
             </div>
           </article>
 
-          <article class="articleTypeCoffe">
-            <img src="./assets/img_coffe/mocha-iced.png" alt="Mocha Iced" />
+          <article class="typeCoffe__article">
+            <img class="typeCoffe__article--img" src="./assets/img_coffe/mocha-iced.png" alt="Mocha Iced" />
             <div>
               <h3>Mocha Iced</h3>
             </div>
@@ -83,40 +89,58 @@
         </div>
       </section>
     </main>
-    <footer>
-        <div>
-          <p class="footerTitle">Informacion</p>
-          <ul class="contentAbout">
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Contactanos</a></li>
-            <li><a href="#">Opciones de Pago</a></li>
-            <li><a href="#">FAQs</a></li>
+
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__link">
+<!--           <a href="#"><img src="./assets/img_page/logo_coffe.svg" alt="" /></a> -->
+          <p class="footer__link--title">Informacion</p>
+
+          <ul>
+            <li><a class="footer__link--color" href="">Contactanos</a></li>
+            <li><a class="footer__link--color" href="">Sobre Nosotros</a></li>
+            <li><a class="footer__link--color" href="">Opciones de Pago</a></li>
+            <li><a class="footer__link--color" href="">FAQs</a></li>
           </ul>
         </div>
-  
-        <div>
-          <p class="footerTitle">Ubicacion</p>
-          <div class="contentAddress">
-            <p>Lorem ipsum dolor.</p>
-            <p>Sit amet consectetur</p>
-            <p>Lopsum dolor.</p>
+
+        <div class="footer__contact">
+          <p class="footer__contact--title">Contactanos</p>
+          <div>
+            <p>Email: Example@coffesoul.ex</p>
+            <p>Tlf: +XX XXXX-XXXX</p>
+            <p>
+              Direccion: Lorem ipsum, dolor sit amet consectetur, adipisicing.
+            </p>
           </div>
         </div>
-        
-        <div class="centerFooter">
-          <p class="footerTitle">Redes Sociales</p>
-          <div class="contentSocial">
-          <a href="https://www.facebook.com" class="facebook">
-            <img src="./assets/icons/ic_baseline-facebook.svg" alt="Facebook" />
-          </a>
-          <a href="https://www.twitter.com" class="twitter">
-            <img src="./assets/icons/prime_twitter.svg" alt="Twitter" />
-          </a>
-          <a href="https://www.instagram.com" class="instagram">
-            <img src="./assets/icons/mdi_instagram.svg" alt="Instagram" />
-          </div>
-          </a>
+
+        <div class="footer__social">
+          <p>Siguenos</p>
+          <ul class="footer__social--link footer__social--media">
+            <li clas>
+              <a class="footer__link--color" href="#"
+                ><img src="./assets/icons/mdi_instagram.svg" alt="Instagram"
+              /></a>
+            </li>
+            <li>
+              <a class="footer__link--color" href="#"
+                ><img src="./assets/icons/ic_baseline-facebook.svg" alt="Facebook"
+              /></a>
+            </li>
+            <li>
+              <a class="footer__link--color" href="#"
+                ><img src="./assets/icons/prime_twitter.svg" alt="Twitter"
+              /></a>
+            </li>
+            <li>
+              <a class="footer__link--color" href="#"
+                ><img src="./assets/icons/prime_twitter.svg" alt="Tiktok"
+              /></a>
+            </li>
+          </ul>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>

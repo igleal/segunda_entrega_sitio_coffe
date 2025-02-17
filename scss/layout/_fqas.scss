@@ -1,0 +1,53 @@
+.question {
+  &__title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.fqas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  &__questions {
+    border: 2px solid #000;
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-two);
+    margin: 1rem 0;
+  }
+}
+
+.inforQuestions {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 8rem auto;
+  grid-template-areas: "item1 item2";
+  justify-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  @include mediaTablet() {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 8rem auto;
+    grid-template-areas:
+      "item1"
+      "item2";
+  }
+
+  &__horario {
+    grid-area: item1;
+    text-align: center;
+    align-content: center;
+  }
+
+  &__reservas {
+    grid-area: item2;
+    text-align: center;
+    align-content: center;
+  }
+}

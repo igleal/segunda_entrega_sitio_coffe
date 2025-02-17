@@ -1,0 +1,59 @@
+.category {
+  @include flex(row, nowrap, space-between, center);
+  padding: 1rem;
+
+  &__menu {
+    display: flex;
+    gap: 1rem;
+    @include mediaMovile() {
+      display: none;
+    }
+  }
+
+  &__btn {
+    display: none;
+
+    @include mediaMovile() {
+      display: flex;
+      background: map-get($colores, color-three);
+      padding: 8px;
+      border: none;
+      border-radius: 1rem;
+    }
+  }
+
+  &__view {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.menuList {
+  &__content {
+    @include flex(row, wrap, center, center);
+    gap: 1rem;
+  }
+
+  &__option {
+    width: 200px;
+    height: auto;
+    background: map-get($colores, color-three);
+    border-radius: 1.5rem;
+    @include flex(column, nowrap, none, none);
+    @include mediaMovile() {
+      width: 140px;
+    }
+  }
+
+  /*   &__option--img {
+  }
+ */
+  &__info {
+    background: map-get($colores, color-seven-half);
+    color: map-get($colores, color-four);
+    border-radius: 0 0 1.5rem 1.5rem;
+    padding: 8px;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,92 @@
+.contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 8rem auto;
+  grid-template-areas: "item1 item2 item3";
+  justify-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+
+  @include mediaTablet() {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 8rem;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item3";
+  }
+
+  @include mediaMovile() {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 8rem auto;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+  }
+
+  &__svg {width: 40px;}
+
+  &__cardMap {
+    grid-area: item1;
+    text-align: center;
+    align-content: center;
+    background: map-get($colores, color-three);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 200px;
+  }
+
+  &__infoMap {
+  }
+
+  &__cardDirect {
+    grid-area: item2;
+    text-align: center;
+    align-content: center;
+    background: map-get($colores, color-three);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 200px;
+  }
+
+  &__cardInfoDirect {
+  }
+
+  &__cardPhone {
+    grid-area: item3;
+    text-align: center;
+    align-content: center;
+    background: map-get($colores, color-three);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 200px;
+  }
+
+  &__cardInfoPhone {
+  }
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+
+/*   &__content {
+    width: 100%;
+  } */
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 480px;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    color: white;
+    background: map-get($colores, color-three);
+  }
+}

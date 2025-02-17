@@ -1,0 +1,66 @@
+.footer {
+  background-color: map-get($colores, color-one);
+  color: map-get($colores, color-three);
+  width: 100%;
+
+  &__info {
+    @include flex(row, nowrap, space-around, self-start);
+    gap: 2rem;
+    padding: 20px 0;
+    width: min(80%);
+    margin: 0 auto;
+
+    @include mediaMovile() {
+        @include flex(column, nowrap, center, center);
+    }
+  }
+
+  &__link {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__link--color {
+    color: map-get($colores, color-three);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    max-width: 300px;
+    gap: 1rem;
+    text-align: center;
+
+    &--title {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__social {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  &__social--link {
+    @include flex(row, nowrap, center, center);
+  }
+
+  &__social--media {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+}

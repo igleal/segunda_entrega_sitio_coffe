@@ -1,0 +1,21 @@
+/* import of utilities */
+
+@import "./utilities/maps";
+@import "./utilities/mixins";
+
+/* import of base */
+
+@import "./base/reset";
+
+/* import of layout */
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/home";
+@import "./layout/menu";
+@import "./layout/contacto";
+@import "./layout/nosotros";
+@import "./layout/fqas";
+
+/* import of components */
+
