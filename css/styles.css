@@ -313,14 +313,22 @@ a {
   text-align: center;
 }
 
+/* CARD DE CONTACTOS */
 .contact {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 8rem auto;
-  grid-template-areas: "item1 item2 item3";
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 1fr;
+  justify-content: center;
   justify-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 0.625rem;
+  margin: 0.3125rem;
+  grid-template-areas: "item1 item2 item3";
+  /*   &__infoMap {
+    } */
+  /*   &__cardInfoDirect {
+    } */
+  /*   &__cardInfoPhone {
+    } */
 }
 @media screen and (max-width: 680px) {
   .contact {
@@ -341,31 +349,45 @@ a {
 }
 .contact__cardMap {
   grid-area: item1;
-  text-align: center;
-  align-content: center;
   background: rgb(236, 177, 118);
   border-radius: 1rem;
   padding: 0.5rem;
-  width: 200px;
+  width: 260px;
+  height: 130px;
+  place-items: center;
+  text-align: center;
+}
+.contact__cardMap div {
+  margin-top: 10px;
 }
 .contact__cardDirect {
   grid-area: item2;
-  text-align: center;
-  align-content: center;
   background: rgb(236, 177, 118);
   border-radius: 1rem;
   padding: 0.5rem;
-  width: 200px;
+  width: 260px;
+  height: 130px;
+  place-items: center;
+  text-align: center;
+}
+.contact__cardDirect div {
+  margin-top: 10px;
 }
 .contact__cardPhone {
   grid-area: item3;
-  text-align: center;
-  align-content: center;
   background: rgb(236, 177, 118);
   border-radius: 1rem;
   padding: 0.5rem;
-  width: 200px;
+  width: 260px;
+  height: 130px;
+  place-items: center;
+  text-align: center;
 }
+.contact__cardPhone div {
+  margin-top: 10px;
+}
+
+/* formulario */
 .formContact {
   display: flex;
   flex-direction: column;
@@ -465,34 +487,52 @@ a {
   }
 }
 
-.question__title {
+/* Preguntas */
+.questions {
   display: flex;
+  gap: 20px;
   flex-direction: column;
+  align-items: center;
+  align-content: stretch;
+  justify-content: start;
+}
+.questions__title {
+  width: 80%;
   text-align: center;
 }
 
-.fqas {
+.faqs {
   display: flex;
-  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.fqas__questions {
-  border: 2px solid #000;
-  width: 300px;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  background: var(--color-two);
-  margin: 1rem 0;
+.faqs__questions {
+  width: 25%;
+  text-align: center;
+}
+@media screen and (max-width: 680px) {
+  .faqs__questions {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .faqs__questions {
+    flex-direction: column;
+    width: 80%;
+  }
 }
 
+/* Horario */
 .inforQuestions {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 30%);
   grid-template-rows: 8rem auto;
   grid-template-areas: "item1 item2";
   justify-items: center;
+  align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }

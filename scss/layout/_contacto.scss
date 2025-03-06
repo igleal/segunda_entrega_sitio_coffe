@@ -1,11 +1,14 @@
+/* CARD DE CONTACTOS */
+
 .contact {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 8rem auto;
-  grid-template-areas: "item1 item2 item3";
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 1fr;
+  justify-content: center;
   justify-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: .625rem;
+  margin: .3125rem;
+  grid-template-areas: "item1 item2 item3";
 
   @include mediaTablet() {
     grid-template-columns: repeat(2, 1fr);
@@ -28,43 +31,57 @@
 
   &__cardMap {
     grid-area: item1;
-    text-align: center;
-    align-content: center;
     background: map-get($colores, color-three);
     border-radius: 1rem;
     padding: 0.5rem;
-    width: 200px;
+    width: 260px;
+    height: 130px;
+    place-items: center;
+    text-align: center;
+    div {
+      margin-top: 10px;
+    }
   }
 
-  &__infoMap {
-  }
+/*   &__infoMap {
+  } */
 
   &__cardDirect {
     grid-area: item2;
-    text-align: center;
-    align-content: center;
     background: map-get($colores, color-three);
     border-radius: 1rem;
     padding: 0.5rem;
-    width: 200px;
+    width: 260px;
+    height: 130px;
+    place-items: center;
+    text-align: center;
+    div {
+      margin-top: 10px;
+    }
   }
 
-  &__cardInfoDirect {
-  }
+/*   &__cardInfoDirect {
+  } */
 
   &__cardPhone {
     grid-area: item3;
-    text-align: center;
-    align-content: center;
     background: map-get($colores, color-three);
     border-radius: 1rem;
     padding: 0.5rem;
-    width: 200px;
+    width: 260px;
+    height: 130px;
+    place-items: center;
+    text-align: center;
+    div {
+      margin-top: 10px;
+    }
   }
 
-  &__cardInfoPhone {
-  }
+/*   &__cardInfoPhone {
+  } */
 }
+
+/* formulario */
 
 .formContact {
   display: flex;
