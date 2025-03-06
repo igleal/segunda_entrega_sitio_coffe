@@ -23,6 +23,7 @@
 }
 
 .viewMenu {
+  background-color: map-get($colores, color-four);
   display: flex;
   align-items: center;
   justify-content: space-evenly;

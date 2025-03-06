@@ -165,6 +165,7 @@ a {
 }
 
 .viewMenu {
+  background-color: rgb(254, 216, 177);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
