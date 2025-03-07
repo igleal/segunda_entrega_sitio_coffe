@@ -226,6 +226,9 @@ a {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  background-image: url("../../assets/img_page/seed_coffe.svg");
+  background-color: rgb(254, 216, 177);
+  background-position: center;
 }
 .coffeType__descrip {
   max-width: 80%;
