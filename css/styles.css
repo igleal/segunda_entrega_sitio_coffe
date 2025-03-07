@@ -1,5 +1,6 @@
 /* import of utilities */
 /* import of base */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -14,7 +15,15 @@ html {
   vertical-align: baseline;
 }
 
-img, picture, video, iframe, figure {
+body {
+  font-family: "Inter", serif;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -77,20 +86,17 @@ a {
 
 .footer {
   background-color: rgb(111, 78, 55);
-  color: rgb(236, 177, 118);
   width: 100%;
 }
 .footer__info {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: self-start;
-  gap: 2rem;
-  padding: 20px 0;
-  width: 80%;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: start;
+  gap: 20px;
+  padding: 20px 0px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
   .footer__info {
     display: flex;
     flex-flow: column nowrap;
@@ -98,47 +104,48 @@ a {
     align-items: center;
   }
 }
-.footer__link {
-  display: grid;
-  gap: 1rem;
-  text-align: center;
-}
-.footer__link p {
-  font-size: 1.2rem;
-}
-.footer__link--color {
+.footer__text {
   color: rgb(236, 177, 118);
 }
-.footer__link--color:hover {
-  text-decoration: underline;
+.footer__link {
+  width: 300px;
+}
+.footer__link--title {
+  color: rgb(254, 216, 177);
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .footer__contact {
-  display: grid;
-  max-width: 300px;
-  gap: 1rem;
-  text-align: center;
+  width: 300px;
 }
 .footer__contact--title {
-  font-size: 1.2rem;
+  color: rgb(254, 216, 177);
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .footer__social {
-  display: grid;
-  gap: 1rem;
-  text-align: center;
+  width: 300px;
 }
-.footer__social p {
-  font-size: 1.2rem;
+.footer__social--title {
+  color: rgb(254, 216, 177);
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 .footer__social--link {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: none;
+  align-items: none;
 }
-.footer__social--media {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
+.footer__social--icono {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  background-color: rgb(166, 123, 91);
+  transition: background-color 1s ease;
+}
+.footer__social--icono:hover {
+  background-color: rgb(236, 177, 118);
 }
 
 .home__banner {

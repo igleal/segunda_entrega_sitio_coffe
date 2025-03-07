@@ -1,66 +1,63 @@
 .footer {
   background-color: map-get($colores, color-one);
-  color: map-get($colores, color-three);
   width: 100%;
 
   &__info {
-    @include flex(row, nowrap, space-around, self-start);
-    gap: 2rem;
-    padding: 20px 0;
-    width: min(80%);
-    margin: 0 auto;
+    @include flex(row, nowrap, center, start);
+    gap: 20px;
+    padding: 20px 0px;
 
-    @include mediaMovile() {
-        @include flex(column, nowrap, center, center);
+    @include mediaTablet() {
+      @include flex(column, nowrap, center, center);
     }
+  }
+
+  &__text {
+    color: map-get($colores, color-three);
   }
 
   &__link {
-    display: grid;
-    gap: 1rem;
-    text-align: center;
+    width: 300px;
 
-    p {
-      font-size: 1.2rem;
-    }
-  }
-
-  &__link--color {
-    color: map-get($colores, color-three);
-
-    &:hover {
-      text-decoration: underline;
+    &--title {
+      color: map-get($colores, color-four);
+      font-size: 20px;
+      margin-bottom: 10px;
     }
   }
 
   &__contact {
-    display: grid;
-    max-width: 300px;
-    gap: 1rem;
-    text-align: center;
+    width: 300px;
 
     &--title {
-      font-size: 1.2rem;
+      color: map-get($colores, color-four);
+      font-size: 20px;
+      margin-bottom: 10px;
     }
   }
 
   &__social {
-    display: grid;
-    gap: 1rem;
-    text-align: center;
+    width: 300px;
 
-    p {
-      font-size: 1.2rem;
+    &--title {
+      color: map-get($colores, color-four);
+      font-size: 20px;
+      margin-bottom: 10px;
     }
-  }
 
-  &__social--link {
-    @include flex(row, nowrap, center, center);
-  }
+    &--link {
+      @include flex(row, nowrap, none, none);
+    }
 
-  &__social--media {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
+    &--icono {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      background-color: map-get($colores, color-two);
+      transition: background-color 1s ease;
+      &:hover {
+        background-color: map-get($colores, color-three);
+      }
+    }
   }
 }
