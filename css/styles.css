@@ -503,6 +503,7 @@ a {
   align-items: center;
   align-content: stretch;
   justify-content: start;
+  margin-bottom: 20px;
 }
 .questions__title {
   width: 80%;
@@ -520,6 +521,7 @@ a {
 .faqs__questions {
   width: 25%;
   text-align: center;
+  border: 1px solid #000;
 }
 @media screen and (max-width: 680px) {
   .faqs__questions {
