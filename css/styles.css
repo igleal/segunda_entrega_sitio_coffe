@@ -451,9 +451,6 @@ a {
   .abourUs__title {
     position: absolute;
     color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
   }
 }
@@ -491,9 +488,6 @@ a {
   .aboutHistory__title {
     position: absolute;
     color: white;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
   }
 }
@@ -524,7 +518,8 @@ a {
 .faqs__questions details {
   background-color: rgb(236, 177, 118);
   border: 2px solid rgb(111, 78, 55);
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
+  padding: 2px;
 }
 .faqs__questions details[open] {
   background-color: rgb(254, 216, 177);

@@ -25,7 +25,8 @@
     details {
       background-color: map-get($colores, color-three);
       border: 2px solid map-get($colores, color-one);
-      border-radius: 0.5rem;
+      border-radius: 0.25rem;
+      padding: 2px;
       &[open] {
         background-color: map-get($colores, color-four);
       }
