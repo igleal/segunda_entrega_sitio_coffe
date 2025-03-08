@@ -499,20 +499,6 @@ a {
 }
 
 /* Preguntas */
-.questions {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  align-items: center;
-  align-content: stretch;
-  justify-content: start;
-  margin-bottom: 20px;
-}
-.questions__title {
-  width: 80%;
-  text-align: center;
-}
-
 .faqs {
   display: flex;
   gap: 20px;
@@ -522,9 +508,7 @@ a {
   align-content: center;
 }
 .faqs__questions {
-  width: 25%;
-  text-align: center;
-  border: 1px solid #000;
+  width: 35%;
 }
 @media screen and (max-width: 680px) {
   .faqs__questions {
@@ -536,6 +520,29 @@ a {
     flex-direction: column;
     width: 80%;
   }
+}
+.faqs__questions details {
+  background-color: rgb(236, 177, 118);
+  border: 2px solid rgb(111, 78, 55);
+  border-radius: 0.5rem;
+}
+.faqs__questions details[open] {
+  background-color: rgb(254, 216, 177);
+}
+.faqs__questions details p {
+  padding: 8px;
+  margin: 0 8px 8px 8px;
+  border-left: 2px solid rgb(124, 68, 79);
+  text-align: justify;
+}
+.faqs__questions summary {
+  font-weight: 300;
+  font-size: 1.25rem;
+  padding: 8px;
+  cursor: pointer;
+}
+.faqs__questions summary[open] {
+  font-weight: 800;
 }
 
 /* Horario */

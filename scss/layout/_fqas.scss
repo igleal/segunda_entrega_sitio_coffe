@@ -1,17 +1,6 @@
 /* Preguntas */
 
 .questions {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  align-items: center;
-  align-content: stretch;
-  justify-content: start;
-  margin-bottom: 20px;
-  &__title {
-    width: 80%;
-    text-align: center;
-  }
 }
 
 .faqs {
@@ -21,16 +10,41 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+
   &__questions {
-    width: 25%;
-    text-align: center;
-    border: 1px solid #000;
+    width: 35%;
+
     @include mediaTablet() {
       width: 40%;
     }
     @include mediaMovile() {
       flex-direction: column;
       width: 80%;
+    }
+
+    details {
+      background-color: map-get($colores, color-three);
+      border: 2px solid map-get($colores, color-one);
+      border-radius: 0.5rem;
+      &[open] {
+        background-color: map-get($colores, color-four);
+      }
+      p {
+        padding: 8px;
+        margin: 0 8px 8px 8px;
+        border-left: 2px solid map-get($colores, color-five);
+        text-align: justify;
+      }
+    }
+
+    summary {
+      font-weight: 300;
+      font-size: 1.25rem;
+      padding: 8px;
+      cursor: pointer;
+      &[open]{
+        font-weight: 800;
+      }
     }
   }
 }
