@@ -29,8 +29,11 @@
       &[open] {
         background-color: map-get($colores, color-four);
       }
-      p {
+      h3 {
         padding: 8px;
+      }
+      p {
+        padding: 12px;
         margin: 0 8px 8px 8px;
         border-left: 2px solid map-get($colores, color-five);
         text-align: justify;
@@ -40,7 +43,7 @@
     summary {
       font-weight: 300;
       font-size: 1.25rem;
-      padding: 8px;
+      padding: 10px;
       cursor: pointer;
       &[open]{
         font-weight: 800;

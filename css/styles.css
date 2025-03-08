@@ -529,8 +529,11 @@ a {
 .faqs__questions details[open] {
   background-color: rgb(254, 216, 177);
 }
-.faqs__questions details p {
+.faqs__questions details h3 {
   padding: 8px;
+}
+.faqs__questions details p {
+  padding: 12px;
   margin: 0 8px 8px 8px;
   border-left: 2px solid rgb(124, 68, 79);
   text-align: justify;
@@ -538,7 +541,7 @@ a {
 .faqs__questions summary {
   font-weight: 300;
   font-size: 1.25rem;
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
 }
 .faqs__questions summary[open] {
