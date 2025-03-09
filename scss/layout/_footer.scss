@@ -29,6 +29,16 @@
   &__contact {
     width: 300px;
 
+    &--div {
+      div {
+        display: flex;
+        margin: 10px;
+        p {
+          color: map-get($colores, color-three);
+        }
+      }
+
+    }
     &--title {
       color: map-get($colores, color-four);
       font-size: 20px;

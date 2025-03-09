@@ -9,7 +9,6 @@
   gap: .625rem;
   margin: .3125rem;
   grid-template-areas: "item1 item2 item3";
-
   @include mediaTablet() {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto 8rem;

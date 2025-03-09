@@ -23,7 +23,6 @@
 }
 
 .viewMenu {
-  background-color: map-get($colores, color-four);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -78,7 +77,6 @@
   align-items: center;
   gap: 1rem;
   background-image: url("../../assets/img_page/seed_coffe.svg");
-  background-color: map-get($colores, color-four);
   background-position: center;
 
   &__descrip {

@@ -16,6 +16,7 @@ html {
 
 body {
   font-family: "Inter", serif;
+  @include gradient (to left, $gradientone);
 }
 
 img,

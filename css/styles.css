@@ -17,6 +17,7 @@ html {
 
 body {
   font-family: "Inter", serif;
+  background: linear-gradient(to left, #d56c4b 0%, #ea925a 38%, #ffb968 70%);
 }
 
 img,
@@ -118,6 +119,13 @@ a {
 .footer__contact {
   width: 300px;
 }
+.footer__contact--div div {
+  display: flex;
+  margin: 10px;
+}
+.footer__contact--div div p {
+  color: rgb(236, 177, 118);
+}
 .footer__contact--title {
   color: rgb(254, 216, 177);
   font-size: 20px;
@@ -172,7 +180,6 @@ a {
 }
 
 .viewMenu {
-  background-color: rgb(254, 216, 177);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -227,7 +234,6 @@ a {
   align-items: center;
   gap: 1rem;
   background-image: url("../../assets/img_page/seed_coffe.svg");
-  background-color: rgb(254, 216, 177);
   background-position: center;
 }
 .coffeType__descrip {
@@ -493,33 +499,49 @@ a {
 }
 
 /* Preguntas */
+.questions {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  /*   background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.questionsTitle {
+  max-width: 90%;
+}
+.questionsTitle h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.questionsTitle p {
+  text-align: justify;
+  font-size: 16px;
+}
+
 .faqs {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
-  align-content: center;
+  gap: 20px;
 }
 .faqs__questions {
-  width: 35%;
+  width: 500px;
+  max-width: 100%;
 }
 @media screen and (max-width: 680px) {
   .faqs__questions {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .faqs__questions {
-    flex-direction: column;
-    width: 80%;
+    max-width: 90%;
   }
 }
 .faqs__questions details {
-  background-color: rgb(236, 177, 118);
+  padding: 16px;
   border: 2px solid rgb(111, 78, 55);
-  border-radius: 0.25rem;
-  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgb(236, 177, 118);
 }
 .faqs__questions details[open] {
   background-color: rgb(254, 216, 177);
