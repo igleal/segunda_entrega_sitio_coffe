@@ -5,14 +5,14 @@
   align-items: $align;
 }
 
-@mixin mediaMovile() {
-  @media screen and (max-width: 480px) {
+@mixin mediaTablet() {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }
 
-@mixin mediaTablet() {
-  @media screen and (max-width: 680px) {
+@mixin mediaMovile() {
+  @media screen and (max-width: 480px) {
     @content;
   }
 }

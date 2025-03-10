@@ -1,24 +1,21 @@
 .header {
   @include flex(row, nowrap, space-between, center);
-  background-color: map-get($colores, color-one);
-  padding: 0.5rem 1.5rem;
+  background-color: map-get($colores, color-nav);
+  padding: 1rem 2rem;
 
-  &__menu {
+  &__hambuguer {
     img {
       display: none;
-      @include mediaMovile() {
+      @include mediaTablet() {
         display: flex;
+
       }
     }
   }
 
   &__nav {
-    @include mediaMovile() {
+    @include mediaTablet() {
       display: none;
-
-      /*       &--true {
-        display: flex;
-      } */
     }
   }
 
@@ -26,18 +23,18 @@
     @include flex(row, nowrap, flex-end, center);
     gap: 30px;
 
-    @include mediaMovile() {
+    @include mediaTablet() {
       flex-direction: column;
     }
   }
 
   &__li {
     a {
-      color: map-get($colores, color-four);
+      color: map-get($colores, color-three);
       font-size: 1em;
 
       &:hover {
-        color: map-get($colores, color-three);
+        color: map-get($colores, color-four);
         transition-duration: 500ms;
       }
     }

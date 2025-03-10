@@ -1,11 +1,57 @@
 $colores: (
+  color-nav: #171614,
   color-one: rgb(111 78 55),
   color-two: rgb(166 123 91),
   color-three: rgb(236 177 118),
   color-four: rgb(254 216 177),
+  color-four-half: rgb(254 216 177 / 60%),
   color-five: rgb(124 68 79),
   color-six: rgb(159 82 85),
   color-seven: rgb(225 106 84),
   color-seven-half: rgb(225 106 84 / 40%),
   color-eight: rgb(243 158 96),
+);
+
+$color2: (
+  color-one: #a76d2a,
+  color-two: #d2a56e,
+  color-three: #e3bf94,
+
+  color-four: #082734,
+  color-five: #12355e,
+  color-six: #33629f,
+
+  color-seven: #993617,
+  color-eight: #c95323,
+  color-nine: #3e4923,
+
+  color-ten: #3e4923,
+  color-eleven: #3e5821,
+  color-twelve: #5d7d35,
+);
+
+$color3: (
+  color-main-background: #f7efec,
+  color-main-heading: #2a3d55,
+  color-main-body: #4b5a66,
+  color-main-accent: #ea516a,
+
+  color-minor-background: #fdf6f2,
+  color-minor-heading: #513a42,
+  color-minor-body: #725660,
+  color-minor-accent: #f9c5bd,
+
+  color-main-background-dark: #1a202c,
+  color-main-heading-dark: #f7efec,
+  color-main-body-dark: #d1c7c5,
+  color-main-accent-dark: #ea516a,
+
+  color-minor-background-dark: #1e2b3b,
+  color-minor-heading-dark: #b1cced,
+  color-minor-body-dark: #d5e3f5,
+  color-minor-accent-dark: #a45b6b,
+);
+
+$font: (
+  font-base: 1rem,
 );
