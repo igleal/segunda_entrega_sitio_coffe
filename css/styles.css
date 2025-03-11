@@ -76,10 +76,10 @@ a {
 .header__li a {
   color: rgb(236, 177, 118);
   font-size: 1em;
+  transition: 500ms ease;
 }
 .header__li a:hover {
   color: rgb(254, 216, 177);
-  transition-duration: 500ms;
 }
 
 .footer {
@@ -270,10 +270,10 @@ a {
   background: rgba(254, 216, 177, 0.6);
   margin: 10px;
   border-radius: 20px;
+  transition: transform 1000ms ease;
 }
 .viewCoffee__article:hover {
   transform: scale(1.1);
-  transition: transform 1000ms;
 }
 .viewCoffee__img {
   padding: 20px;
@@ -298,7 +298,7 @@ a {
 }
 
 .main {
-  margin: 2.5rem;
+  margin: 1.5rem;
   background: rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
@@ -323,6 +323,7 @@ a {
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: #171614;
+  transition: 800ms ease;
 }
 .categoryMenu__icon a:hover {
   background: rgb(254, 216, 177);
@@ -346,6 +347,7 @@ a {
     background: rgb(236, 177, 118);
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 800ms ease;
   }
   .categoryMenu__btn:hover {
     background: rgb(254, 216, 177);
@@ -367,10 +369,10 @@ a {
   background: rgba(254, 216, 177, 0.6);
   margin: 10px;
   border-radius: 20px;
+  transition: transform 1000ms ease;
 }
 .menuList__option:hover {
   transform: scale(1.1);
-  transition: transform 1000ms;
 }
 .menuList__option--img {
   padding: 20px;
@@ -404,14 +406,14 @@ a {
   justify-content: center;
   justify-items: center;
   gap: 0.625rem;
-  margin: 0.3125rem;
+  margin: 1.5rem;
   grid-template-areas: "item1 item2 item3";
   /*   &__infoMap {
-    } */
+  } */
   /*   &__cardInfoDirect {
-    } */
+  } */
   /*   &__cardInfoPhone {
-    } */
+  } */
 }
 @media screen and (max-width: 768px) {
   .contact {
@@ -473,134 +475,200 @@ a {
 /* formulario */
 .formContact {
   display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  padding: 40px 20;
   gap: 20px;
-  max-width: 100%;
-  /*   &__content {
-      width: 100%;
-    } */
-}
-.formContact__message {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 480px;
-  padding: 30px;
-  margin: auto;
-  border-radius: 10px;
-  color: white;
-  background: rgb(236, 177, 118);
-}
-
-.abourUs {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.abourUs__img {
-  width: 300px;
-  height: auto;
 }
 @media screen and (max-width: 768px) {
-  .abourUs__img {
-    position: relative;
+  .formContact {
+    flex-direction: column;
+  }
+}
+.formContact__sms {
+  width: 50%;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+.formContact__sms h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+.formContact__sms p {
+  font-size: 1rem;
+  text-align: justify;
+}
+@media screen and (max-width: 768px) {
+  .formContact__sms {
     width: 100%;
+  }
+}
+.formContact__content {
+  width: 50%;
+  padding: 1rem;
+  background: rgba(254, 216, 177, 0.2);
+  border-radius: 4px;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .formContact__content {
+    width: 100%;
+  }
+}
+.formContact__input {
+  width: 100%;
+  background: rgb(236, 177, 118);
+  padding: 0.75rem;
+  border-radius: 6px;
+  color: white;
+  margin-bottom: 10px;
+}
+.formContact__btn {
+  width: 100%;
+  background: rgb(111, 78, 55);
+  border-radius: 30px;
+  padding: 0.75rem;
+  color: white;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition: 500ms ease;
+}
+.formContact__btn:hover {
+  background: rgb(166, 123, 91);
+}
+
+.aboutUs {
+  display: flex;
+  padding: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .aboutUs {
+    padding: 0;
+    position: relative;
+  }
+}
+.aboutUs__img {
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 768px) {
+  .aboutUs__img {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border-radius: 0;
     padding: 0rem;
   }
 }
-.abourUs__title {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-  align-items: center;
-  max-width: 50%;
+.aboutUs__title {
+  width: 50%;
+  padding: 20px 40px;
+}
+.aboutUs__title h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.aboutUs__title h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.aboutUs__title p {
+  font-size: 1rem;
+  text-align: justify;
 }
 @media screen and (max-width: 768px) {
-  .abourUs__title {
+  .aboutUs__title {
     position: absolute;
     color: white;
-    text-align: center;
+    align-self: center;
+    width: 100%;
+    background: rgba(225, 106, 84, 0.2);
   }
 }
 
 .aboutHistory {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  padding: 2.5rem;
 }
 @media screen and (max-width: 768px) {
   .aboutHistory {
+    padding: 0;
     position: relative;
-    width: 100%;
-    padding: 0rem;
   }
 }
 .aboutHistory__img {
-  width: 300px;
-  height: auto;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 @media screen and (max-width: 768px) {
   .aboutHistory__img {
     width: 100%;
+    border-radius: 0;
+    padding: 0rem;
   }
 }
 .aboutHistory__title {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  text-align: center;
-  align-items: center;
-  max-width: 50%;
+  width: 50%;
+  padding: 20px 40px;
+}
+.aboutHistory__title h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.aboutHistory__title h3 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.aboutHistory__title p {
+  font-size: 1rem;
+  text-align: justify;
 }
 @media screen and (max-width: 768px) {
   .aboutHistory__title {
     position: absolute;
     color: white;
-    text-align: center;
+    align-self: center;
+    width: 100%;
+    background: rgba(225, 106, 84, 0.2);
   }
 }
 
-/* Preguntas */
 .questions {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  /*   background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  margin: 20px;
 }
 
 .questionsTitle {
-  max-width: 90%;
+  margin-bottom: 40px;
 }
 .questionsTitle h2 {
   text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 .questionsTitle p {
   text-align: justify;
-  font-size: 16px;
+  font-size: 1rem;
+  width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .questionsTitle p {
+    width: 100%;
+  }
 }
 
 .faqs {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: center;
   align-items: center;
   gap: 20px;
 }
 .faqs__questions {
   width: 500px;
-  max-width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .faqs__questions {
-    max-width: 90%;
-  }
 }
 .faqs__questions details {
   padding: 16px;
@@ -608,6 +676,7 @@ a {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgb(236, 177, 118);
+  transition: 500ms ease;
 }
 .faqs__questions details[open] {
   background-color: rgb(254, 216, 177);
@@ -629,35 +698,6 @@ a {
 }
 .faqs__questions summary[open] {
   font-weight: 800;
-}
-
-/* Horario */
-.inforQuestions {
-  display: grid;
-  grid-template-columns: repeat(2, 30%);
-  grid-template-rows: 8rem auto;
-  grid-template-areas: "item1 item2";
-  justify-items: center;
-  align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .inforQuestions {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 8rem auto;
-    grid-template-areas: "item1" "item2";
-  }
-}
-.inforQuestions__horario {
-  grid-area: item1;
-  text-align: center;
-  align-content: center;
-}
-.inforQuestions__reservas {
-  grid-area: item2;
-  text-align: center;
-  align-content: center;
 }
 
 /* import of components */

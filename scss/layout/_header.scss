@@ -29,10 +29,10 @@
     a {
       color: map-get($colores, color-three);
       font-size: 1em;
+      transition: 500ms ease;
 
       &:hover {
         color: map-get($colores, color-four);
-        transition-duration: 500ms;
       }
     }
   }

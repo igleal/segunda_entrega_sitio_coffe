@@ -60,22 +60,27 @@
       </div>
     </section>
 
-    <section class="formContact">
-      <h2>Mandamis un Mensaje</h2>
+    <section class="formContact main">
+      <div class="formContact__sms">
+        <h2>Enviamos un Mensaje</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet, facere architecto, et magnam veniam hic enim a soluta labore, id nihil doloremque excepturi explicabo nisi minus voluptates dolorum laboriosam!</p>
+      </div>
       <div class="formContact__content">
-        <form action="" method="" class="formContact__message">
+        <form class="formContact__message" action="" method="">
+
           <label for="nombreMensaje">Nombre:</label>
-          <input type="text" name="nombre" id="nombreMensaje" class="formContact__input" />
+          <input class="formContact__input" type="text" name="nombre" id="nombreMensaje"/>
 
           <label for="apellidoMensaje">Apellido</label>
-          <input type="text" name="apellido" id="apellidoMensaje" class="formContact__input" />
+          <input class="formContact__input" type="text" name="apellido" id="apellidoMensaje"/>
 
           <label for="emailForm">Correo</label>
-          <input type="email" name="email" id="emailForm" class="formContact__input" />
+          <input class="formContact__input" type="email" name="email" id="emailForm"/>
 
           <label for="descripcionMensaje">Mensaje</label>
-          <textarea name="mensaje" id="descripcionMensaje" class="formContact__input"></textarea>
-          <input type="submit" />
+          <textarea class="formContact__input" name="mensaje" id="descripcionMensaje"></textarea>
+
+          <input class="formContact__btn" type="submit"/>
         </form>
       </div>
     </section>

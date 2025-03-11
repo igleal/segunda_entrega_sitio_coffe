@@ -123,10 +123,9 @@
     background: map-get($colores, color-four-half);
     margin: 10px;
     border-radius: 20px;
-
+    transition: transform 1000ms ease;
     &:hover {
       transform: scale(1.1);
-      transition: transform 1000ms;
     }
   }
 

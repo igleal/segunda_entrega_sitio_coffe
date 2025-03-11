@@ -1,63 +1,100 @@
-.abourUs {
-  @include flex(row, nowrap, space-evenly, center);
+.aboutUs {
+  display: flex;
+  padding: 2.5rem;
+  @include mediaTablet() {
+    padding: 0;
+    position: relative;
+  }
 
   &__img {
-    width: 300px;
-    height: auto;
-
+    width: 50%;
+    border-radius: 15px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     @include mediaTablet() {
-      position: relative;
+      background: rgba(0, 0, 0, 0.5);;
       width: 100%;
+      border-radius: 0;
       padding: 0rem;
     }
   }
 
   &__title {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-    align-items: center;
-    max-width: 50%;
+    width: 50%;
+    padding: 20px 40px;
+    
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: justify;
+    }
 
     @include mediaTablet() {
       position: absolute;
       color: white;
-      text-align: center;
+      align-self: center;
+      width: 100%;
+      background: map-get($colores, color-seven-half);
     }
   }
 }
 
 .aboutHistory {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  padding: 2.5rem;
 
   @include mediaTablet() {
+    padding: 0;
     position: relative;
-    width: 100%;
-    padding: 0rem;
   }
-  &__img {
-    width: 300px;
-    height: auto;
 
-    @include mediaTablet {
+  &__img {
+    width: 50%;
+    border-radius: 15px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    @include mediaTablet() {
+      
       width: 100%;
+      border-radius: 0;
+      padding: 0rem;
     }
   }
+
   &__title {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-    align-items: center;
-    max-width: 50%;
+    width: 50%;
+    padding: 20px 40px;
+    
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin: 10px 0;
+    }
+
+    p {
+      font-size: 1rem;
+      text-align: justify;
+    }
 
     @include mediaTablet() {
       position: absolute;
       color: white;
-      text-align: center;
+      align-self: center;
+      width: 100%;
+      background: map-get($colores, color-seven-half);
     }
   }
 }
