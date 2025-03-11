@@ -4,13 +4,10 @@
   padding: 1rem 2rem;
 
   &__hambuguer {
-    img {
       display: none;
       @include mediaTablet() {
         display: flex;
-
       }
-    }
   }
 
   &__nav {
