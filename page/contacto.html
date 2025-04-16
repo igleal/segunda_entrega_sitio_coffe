@@ -13,11 +13,18 @@
 
 <body>
   <header class="header">
-    <a class="header__logo" href="./index.html"><img src="../assets/img_page/logo_coffe.svg"
-        alt="logo_the_soul_coffe" /></a>
-    <div class="header__hambuguer">
-      <img src="../assets/icons/menu-2.svg" alt="menu_hamburger" />
+
+    <div class="header__logo">
+      <a href="../index.html">
+        <img src="../assets/img_page/logo_coffe.svg" alt="logo_the_soul_coffe">
+      </a>
     </div>
+
+    <input type="checkbox" id="check__menuIcon" class="header__menuIcon">
+    <label for="check__menuIcon" class="header__hambuguer">
+      <img src="../assets/icons/menu-2.svg" alt="menu_hamburger" />
+    </label>
+
     <nav class="header__nav">
       <ul class="header__ul">
         <li class="header__li"><a href="../index.html">Inicio</a></li>
@@ -63,24 +70,26 @@
     <section class="formContact main">
       <div class="formContact__sms">
         <h2>Enviamos un Mensaje</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet, facere architecto, et magnam veniam hic enim a soluta labore, id nihil doloremque excepturi explicabo nisi minus voluptates dolorum laboriosam!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur amet, facere architecto, et magnam
+          veniam hic enim a soluta labore, id nihil doloremque excepturi explicabo nisi minus voluptates dolorum
+          laboriosam!</p>
       </div>
       <div class="formContact__content">
         <form class="formContact__message" action="" method="">
 
           <label for="nombreMensaje">Nombre:</label>
-          <input class="formContact__input" type="text" name="nombre" id="nombreMensaje"/>
+          <input class="formContact__input" type="text" name="nombre" id="nombreMensaje" />
 
           <label for="apellidoMensaje">Apellido</label>
-          <input class="formContact__input" type="text" name="apellido" id="apellidoMensaje"/>
+          <input class="formContact__input" type="text" name="apellido" id="apellidoMensaje" />
 
           <label for="emailForm">Correo</label>
-          <input class="formContact__input" type="email" name="email" id="emailForm"/>
+          <input class="formContact__input" type="email" name="email" id="emailForm" />
 
           <label for="descripcionMensaje">Mensaje</label>
           <textarea class="formContact__input" name="mensaje" id="descripcionMensaje"></textarea>
 
-          <input class="formContact__btn" type="submit"/>
+          <input class="formContact__btn" type="submit" />
         </form>
       </div>
     </section>

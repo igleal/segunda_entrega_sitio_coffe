@@ -4,15 +4,26 @@
   padding: 1rem 2rem;
 
   &__hambuguer {
-      display: none;
-      @include mediaTablet() {
-        display: flex;
-      }
+    display: none;
+
+    @include mediaTablet() {
+      display: flex;
+    }
+  }
+
+  &__menuIcon {
+    display: none;
   }
 
   &__nav {
     @include mediaTablet() {
       display: none;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      background-color: map-get($colores, color-nav-half);
+      z-index: 1;
     }
   }
 
@@ -22,6 +33,9 @@
 
     @include mediaTablet() {
       flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+      padding: 1rem;
     }
   }
 
@@ -35,5 +49,24 @@
         color: map-get($colores, color-four);
       }
     }
+  }
+}
+
+#check__menuIcon:checked ~ .header__nav .header__ul {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+}
+
+#check__menuIcon:checked ~ .header__nav {
+  display: block;
+
+  .header__ul {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header__li:hover {
+    color: map-get($colores, color-four);
   }
 }
